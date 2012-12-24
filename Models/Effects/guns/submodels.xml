@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <cannon>
+    <model>Models/Geometry/tracer.xml</model>
+    <speed>2755.9</speed>
+    <cd>0.193</cd>
+    <weight>0.286600941</weight>
+    <eda>0.00338158219</eda>
+    <!--<pitch-offset>0</pitch-offset>-->
+    <fuse-range>0</fuse-range>
+    <life>40</life>
+    <trigger>controls/armament/trigger</trigger>
+    <expiry>true</expiry>
+    <repeat>true</repeat>
+    <delay>0.41</delay>
+    <count>33</count>
+    <wind>false</wind>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Westland-Whirlwind/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+    <impact-reports>sim/ai/aircraft/collision/cannon</impact-reports>
+    <pitch-offset>0.1</pitch-offset>
+  </cannon>
+
+  <!-- Left exterior -->
+  <submodel>
+    <name>Left exterior gun</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <x-offset>  7.05441250 </x-offset> <!-- -2.15008 m =  7.05441250 ft -->
+    <y-offset>  6.51298190 </y-offset> <!-- -1.98506 m =  6.51298190 ft -->
+    <z-offset> -0.63116597 </z-offset> <!-- -0.19237 m = -0.63116597 ft -->
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+  </submodel>
+
+  <submodel>
+    <name>Left exterior smoke</name>
+    <model>Aircraft/Westland-Whirlwind/Models/Effects/guns/smoke.xml</model>
+    <trigger alias="../../cannon/trigger"/>
+    <speed>200</speed>
+    <repeat>true</repeat>
+    <delay>0.08</delay>
+    <count>160</count>
+    <x-offset>  7.05441250 </x-offset> <!-- -2.15008 m =  7.05441250 ft -->
+    <y-offset>  6.51298190 </y-offset> <!-- -1.98506 m =  6.51298190 ft -->
+    <z-offset> -0.63116597 </z-offset> <!-- -0.19237 m = -0.63116597 ft -->
+    <yaw-offset>-60</yaw-offset>
+    <pitch-offset>-60</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>33</buoyancy>
+    <life>5</life>
+  </submodel>
+
+  <!-- Left center -->
+  <submodel>
+    <name>Left center gun</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <x-offset>  7.0544125 </x-offset> <!-- -2.15008 m =  7.0544125 ft -->
+    <y-offset>  6.0880596 </y-offset> <!-- -1.85555 m =  6.0880596 ft -->
+    <z-offset> -0.6683397 </z-offset> <!-- -0.20370 m = -0.6683397 ft -->
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+  </submodel>
+
+  <submodel>
+    <name>Left center smoke</name>
+    <model>Aircraft/Westland-Whirlwind/Models/Effects/guns/smoke.xml</model>
+    <trigger alias="../../cannon/trigger"/>
+    <speed>200</speed>
+    <repeat>true</repeat>
+    <delay>0.08</delay>
+    <count>160</count>
+    <x-offset>  7.0544125 </x-offset> <!-- -2.15008 m =  7.0544125 ft -->
+    <y-offset>  6.0880596 </y-offset> <!-- -1.85555 m =  6.0880596 ft -->
+    <z-offset> -0.6683397 </z-offset> <!-- -0.20370 m = -0.6683397 ft -->
+    <yaw-offset>-60</yaw-offset>
+    <pitch-offset>-60</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>33</buoyancy>
+    <life>5</life>
+  </submodel>
+
+  <!-- Left interior -->
+  <submodel>
+    <name>Left interior gun</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <x-offset>  7.05441250 </x-offset> <!-- -2.15008 m =  7.05441250 ft -->
+    <y-offset>  5.66313720 </y-offset> <!-- -1.72604 m =  5.66313720 ft -->
+    <z-offset> -0.70551343 </z-offset> <!-- -0.21503 m = -0.70551343 ft -->
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+  </submodel>
+
+  <submodel>
+    <name>Left interior smoke</name>
+    <model>Aircraft/Westland-Whirlwind/Models/Effects/guns/smoke.xml</model>
+    <trigger alias="../../cannon/trigger"/>
+    <speed>200</speed>
+    <repeat>true</repeat>
+    <delay>0.08</delay>
+    <count>160</count>
+    <x-offset>  7.05441250 </x-offset> <!-- -2.15008 m =  7.05441250 ft -->
+    <y-offset>  5.66313720 </y-offset> <!-- -1.72604 m =  5.66313720 ft -->
+    <z-offset> -0.70551343 </z-offset> <!-- -0.21503 m = -0.70551343 ft -->
+    <yaw-offset>-60</yaw-offset>
+    <pitch-offset>-60</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>33</buoyancy>
+    <life>5</life>
+  </submodel>
+
+  <!-- Right exterior -->
+  <submodel>
+    <name>Right exterior gun</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <x-offset>  7.05441250 </x-offset> <!-- -2.15008 m =  7.05441250 ft -->
+    <y-offset> -6.51298190 </y-offset> <!--  1.98506 m = -6.51298190 ft -->
+    <z-offset> -0.63116597 </z-offset> <!-- -0.19237 m = -0.63116597 ft -->
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+  </submodel>
+
+  <submodel>
+    <name>Right exterior smoke</name>
+    <model>Aircraft/Westland-Whirlwind/Models/Effects/guns/smoke.xml</model>
+    <trigger alias="../../cannon/trigger"/>
+    <speed>200</speed>
+    <repeat>true</repeat>
+    <delay>0.08</delay>
+    <count>160</count>
+    <x-offset>  7.05441250 </x-offset> <!-- -2.15008 m =  7.05441250 ft -->
+    <y-offset> -6.51298190 </y-offset> <!--  1.98506 m = -6.51298190 ft -->
+    <z-offset> -0.63116597 </z-offset> <!-- -0.19237 m = -0.63116597 ft -->
+    <yaw-offset>-60</yaw-offset>
+    <pitch-offset>-60</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>33</buoyancy>
+    <life>5</life>
+  </submodel>
+
+  <!-- Right center -->
+  <submodel>
+    <name>Right center gun</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <x-offset>  7.0544125 </x-offset> <!-- -2.15008 m =  7.0544125 ft -->
+    <y-offset> -6.0880596 </y-offset> <!--  1.85555 m = -6.0880596 ft -->
+    <z-offset> -0.6683397 </z-offset> <!-- -0.20370 m = -0.6683397 ft -->
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+  </submodel>
+
+  <submodel>
+    <name>Right center smoke</name>
+    <model>Aircraft/Westland-Whirlwind/Models/Effects/guns/smoke.xml</model>
+    <trigger alias="../../cannon/trigger"/>
+    <speed>200</speed>
+    <repeat>true</repeat>
+    <delay>0.08</delay>
+    <count>160</count>
+    <x-offset>  7.0544125 </x-offset> <!-- -2.15008 m =  7.0544125 ft -->
+    <y-offset> -6.0880596 </y-offset> <!--  1.85555 m = -6.0880596 ft -->
+    <z-offset> -0.6683397 </z-offset> <!-- -0.20370 m = -0.6683397 ft -->
+    <yaw-offset>-60</yaw-offset>
+    <pitch-offset>-60</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>33</buoyancy>
+    <life>5</life>
+  </submodel>
+
+  <!-- Right interior -->
+  <submodel>
+    <name>Right interior gun</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <x-offset>  7.05441250 </x-offset> <!-- -2.15008 m =  7.05441250 ft -->
+    <y-offset> -5.66313720 </y-offset> <!--  1.72604 m = -5.66313720 ft -->
+    <z-offset> -0.70551343 </z-offset> <!-- -0.21503 m = -0.70551343 ft -->
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+  </submodel>
+
+  <submodel>
+    <name>Right interior smoke</name>
+    <model>Aircraft/Westland-Whirlwind/Models/Effects/guns/smoke.xml</model>
+    <trigger alias="../../cannon/trigger"/>
+    <speed>200</speed>
+    <repeat>true</repeat>
+    <delay>0.08</delay>
+    <count>160</count>
+    <x-offset>  7.05441250 </x-offset> <!-- -2.15008 m =  7.05441250 ft -->
+    <y-offset> -5.66313720 </y-offset> <!--  1.72604 m = -5.66313720 ft -->
+    <z-offset> -0.70551343 </z-offset> <!-- -0.21503 m = -0.70551343 ft -->
+    <yaw-offset>-60</yaw-offset>
+    <pitch-offset>-60</pitch-offset>
+    <eda>10</eda>
+    <wind>true</wind>
+    <buoyancy>33</buoyancy>
+    <life>5</life>
+  </submodel>
+
+</PropertyList>
+

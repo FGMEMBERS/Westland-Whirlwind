@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>fuel.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>consumables/fuel/tank[0]/level-gal_us</property>
+    <interpolation> 
+      <entry><ind>  0.000 </ind><dep> 15.0 </dep></entry>
+      <entry><ind>  6.000 </ind><dep> 30.0 </dep></entry>
+      <entry><ind> 18.014 </ind><dep> 45.0 </dep></entry>
+      <entry><ind> 24.020 </ind><dep> 50.0 </dep></entry>
+      <entry><ind> 30.020 </ind><dep> 57.5 </dep></entry>
+      <entry><ind> 36.030 </ind><dep> 65.0 </dep></entry>
+      <entry><ind> 44.440 </ind><dep> 80.0 </dep></entry>
+    </interpolation>
+    <center> 
+      <x-m> 0.0016233 </x-m>
+      <y-m> 0.0000000 </y-m>
+      <z-m> 0.0219562 </z-m>
+    </center>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

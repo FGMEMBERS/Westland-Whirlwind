@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>panel2</object-name>
+    <object-name>cotes</object-name>
+    <object-name>boites1</object-name>
+    <object-name>boites2</object-name>
+    <object-name>boites3</object-name>
+    <object-name>boites4</object-name>
+    <object-name>boites5</object-name>
+    <object-name>boites6</object-name>
+    <object-name>boites7</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m>  0.102 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.102 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m>  0.102 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m>  0.008 </z-m>
+    </offsets>
+  </model>
+
+  <!-- COMPASS -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.008 </z-m>
+    </offsets>
+  </model>
+
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m>  0.008 </z-m>
+    </offsets>
+  </model>
+
+  <!-- GEAR -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/gear/gear.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.192 </y-m>
+      <z-m>  0.114 </z-m>
+    </offsets>
+  </model>
+
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/Clock/Clock.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.297 </y-m>
+      <z-m> -0.035 </z-m>
+    </offsets>
+  </model>
+
+  <!-- BOOST -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/boost/boostL.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.190 </y-m>
+      <z-m>  0.006 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/boost/boostR.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.257 </y-m>
+      <z-m>  0.006 </z-m>
+    </offsets>
+  </model>
+
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/fuel/fuelL.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.190 </y-m>
+      <z-m> -0.063 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/fuel/fuelL.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.257 </y-m>
+      <z-m> -0.063 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/rpm/rpmL.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.189 </y-m>
+      <z-m>  0.124 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/rpm/rpmL.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.231 </y-m>
+      <z-m>  0.067 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Instruments switch -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/switchs/instr-switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.091 </y-m>
+      <z-m>  0.188 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Gun ship -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/N-9_Gunsight/N-9_Gunsight.xml</path>
+    <offsets>
+      <x-m> -0.0330 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m>  0.1860 </z-m>
+    </offsets>
+  </model>
+ 
+  <!-- Throttles -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/Instruments/throttle/throttle.xml</path>
+    <offsets>
+      <x-m>  0.240 </x-m>
+      <y-m> -0.318 </y-m>
+      <z-m> -0.200 </z-m>
+      <roll-deg> -10 </roll-deg>
+    </offsets>
+  </model>
+  
+</PropertyList>
+
