@@ -11,8 +11,8 @@
     <object-name>throttlemanetteR</object-name>
     <object-name>mixturemanetteL</object-name>
     <object-name>mixturemanetteR</object-name>
-    <object-name>propellermanette</object-name>
-	
+    <object-name>propellermanetteL</object-name>
+    <object-name>propellermanetteR</object-name>
   </animation>
 
   <!-- Manette des gazs -->
@@ -65,10 +65,10 @@
     </axis>
   </animation>
  
- <!-- Manette de pas d'hélice -->
+  <!-- Manette de pas d'hélice -->
   <animation>
     <type>rotate</type>
-    <object-name>propellermanette</object-name>
+    <object-name>propellermanetteL</object-name>
     <property>controls/engines/engine[0]/propeller-pitch</property>
     <factor> -70 </factor>
     <axis>
@@ -78,11 +78,29 @@
     </axis>
   </animation>
 
+  <animation>
+    <type>rotate</type>
+    <object-name>propellermanetteR</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <factor> -70 </factor>
+    <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -0.03 </z-m>
+    </offsets>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
   <!-- Ajustage par molette -->
+  <!-- Puissance Gauche -->
   <animation>
     <type>pick</type>
     <visible>true</visible>
-    <object-name>throttlemanette</object-name>
+    <object-name>throttlemanetteL</object-name>
     <action>
       <button>3</button>
       <binding>
@@ -96,7 +114,7 @@
   <animation>
     <type>pick</type>
     <visible>true</visible>
-    <object-name>throttlemanette</object-name>
+    <object-name>throttlemanetteL</object-name>
     <action>
       <button>4</button>
       <binding>
@@ -107,10 +125,40 @@
     </action>
   </animation>
 
+  <!-- Puissance Droite -->
   <animation>
     <type>pick</type>
     <visible>true</visible>
-    <object-name>mixturemanette</object-name>
+    <object-name>throttlemanetteR</object-name>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/throttle</property>
+        <step>0.1</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>throttlemanetteR</object-name>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/throttle</property>
+        <step>-0.1</step>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Mixture Gauche -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>mixturemanetteL</object-name>
     <action>
       <button>3</button>
       <binding>
@@ -124,7 +172,7 @@
   <animation>
     <type>pick</type>
     <visible>true</visible>
-    <object-name>mixturemanette</object-name>
+    <object-name>mixturemanetteL</object-name>
     <action>
       <button>4</button>
       <binding>
@@ -135,10 +183,40 @@
     </action>
   </animation>
 
+  <!-- Mixture Droite -->
   <animation>
     <type>pick</type>
     <visible>true</visible>
-    <object-name>propellermanette</object-name>
+    <object-name>mixturemanetteR</object-name>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/mixture</property>
+        <step>0.1</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>mixturemanetteR</object-name>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/mixture</property>
+        <step>-0.1</step>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Hélice Gauche -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>propellermanetteL</object-name>
     <action>
       <button>3</button>
       <binding>
@@ -152,16 +230,44 @@
   <animation>
     <type>pick</type>
     <visible>true</visible>
-    <object-name>propellermanette</object-name>
+    <object-name>propellermanetteL</object-name>
     <action>
       <button>4</button>
       <binding>
         <command>property-adjust</command>
         <property>controls/engines/engine[0]/propeller-pitch</property>
+        <step>-0.1</step>
+      </binding>
+    </action>
+  </animation>
+
+  <!-- Hélice Droite -->
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>propellermanetteR</object-name>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/propeller-pitch</property>
+        <step>0.1</step>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>propellermanetteR</object-name>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>controls/engines/engine[1]/propeller-pitch</property>
         <step>-0.1</step>
       </binding>
     </action>
   </animation>
 
 </PropertyList>
-

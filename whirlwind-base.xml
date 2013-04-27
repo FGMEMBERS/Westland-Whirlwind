@@ -4,6 +4,7 @@
 
   <sim include="Nasal/views.xml">
 
+    <description>Westland Whirlwind (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>

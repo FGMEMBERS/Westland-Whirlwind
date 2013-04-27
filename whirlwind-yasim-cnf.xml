@@ -5,6 +5,7 @@
  <sim>
 
   <description>Westland Whirlwind (YASim)</description>
+  <author>Emmanuel BARANGER (3D/FDM)</author>
   <flight-model>yasim</flight-model>
   <aero>whirlwind-yasim</aero>
 

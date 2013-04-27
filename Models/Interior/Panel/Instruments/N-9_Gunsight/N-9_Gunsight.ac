@@ -525,7 +525,7 @@ name "DLens.Frame1"
 loc -0.030372 0.093913 0.028239
 data 12
 DLens.Frame1
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 45.000001
 numvert 133
@@ -1573,7 +1573,7 @@ name "DLens.Frame2"
 loc -0.048037 0.073035 -0
 data 12
 DLens.Frame2
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 45.000001
 numvert 43
@@ -1851,7 +1851,7 @@ name "Knob1"
 loc 0.035747 0.053579 0.049185
 data 5
 Knob1
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 45.000001
 numvert 148
@@ -3034,7 +3034,7 @@ name "LensSwitch"
 loc -0.050228 0.082953 0.056153
 data 10
 LensSwitch
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 45.000001
 numvert 172
@@ -5539,7 +5539,7 @@ name "Reticul"
 loc -0.002903 0.12706 -0
 data 7
 Reticul
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 30.000001
 numvert 146
@@ -6824,7 +6824,7 @@ name "Turn"
 loc 0.05637 0.066933 0.000485
 data 4
 Turn
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 45.000001
 numvert 60
@@ -7268,7 +7268,7 @@ name "TurnBase"
 loc 0.040394 0.067173 0.000675
 data 8
 TurnBase
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 45.000001
 numvert 52
@@ -7681,7 +7681,7 @@ name "ball"
 loc 0.058816 0.066425 0.000034
 data 4
 ball
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 30.000001
 numvert 37
@@ -7925,7 +7925,7 @@ name "fond"
 loc 0.012622 0.044707 0.002426
 data 4
 fond
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 45.000001
 numvert 496
@@ -11926,7 +11926,7 @@ name "visses"
 loc 0.014842 0.059997 0.030639
 data 6
 visses
-texture "colors.png"
+texture "N-9_Gunsight.png"
 texrep 1 1
 crease 30.000001
 numvert 68

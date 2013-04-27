@@ -7,7 +7,7 @@ name "boites1"
 loc 0 0 -0
 data 7
 boites1
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 32
@@ -190,7 +190,7 @@ name "boites2"
 loc 0 0 -0
 data 7
 boites2
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 24
@@ -351,7 +351,7 @@ name "boites3"
 loc 0.000001 0 -0
 data 7
 boites3
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -437,7 +437,7 @@ name "boites4"
 loc 0 0 -0
 data 7
 boites4
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 70
@@ -934,7 +934,7 @@ name "boites5"
 loc 0 0 -0
 data 7
 boites5
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -1006,7 +1006,7 @@ name "boites6"
 loc 0 0 -0
 data 7
 boites6
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -1078,7 +1078,7 @@ name "boites7"
 loc 0 0 -0
 data 7
 boites7
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 12
@@ -1164,7 +1164,7 @@ name "cotes"
 loc 0 0 -0
 data 5
 cotes
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 720
@@ -5675,7 +5675,7 @@ name "panel"
 loc 0 0 -0
 data 5
 panel
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 124
@@ -6493,7 +6493,7 @@ name "panel2"
 loc 0 0 -0
 data 6
 panel2
-texture "colors.png"
+texture "panel.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 242

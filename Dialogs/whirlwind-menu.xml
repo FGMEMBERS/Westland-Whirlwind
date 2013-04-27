@@ -18,7 +18,7 @@
         <label>Immatriculation</label>
         <binding>
           <command>nasal</command>
-          <script>dh88.immat_dialog.toggle()</script>
+          <script>whirlwind.immat_dialog.toggle()</script>
         </binding>
       </item>
       -->
