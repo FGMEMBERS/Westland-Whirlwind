@@ -24,6 +24,10 @@
       <livery>
         <file type="string">default</file>
       </livery>
+      <lights>
+        <nav-lights>true</nav-lights>
+        <strobe-lights>true</strobe-lights>
+      </lights>
     </model>
 
     <submodels>

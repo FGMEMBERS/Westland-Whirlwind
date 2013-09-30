@@ -29,10 +29,17 @@
     <object-name>DLens</object-name>
   </animation>
 
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre_turn</object-name>
+  </animation>
 
   <!--  REMBRANDT support for transparent objects -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
     <object-name>vitre_turn</object-name>
     <object-name>PLens</object-name>
     <object-name>DLens</object-name>

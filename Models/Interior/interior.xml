@@ -29,6 +29,16 @@
     <object-name>intverriere</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intverriere</object-name>
+  </effect>
+
  <!-- Panel -->
   <model>
     <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/panel.xml</path>
