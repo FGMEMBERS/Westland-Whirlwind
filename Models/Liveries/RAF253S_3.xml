@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim>
+    
+    <model>
+      <livery>
+        <name type="string">RAF 263 Sqdn #3</name>
+        <index type="int">1</index>
+        <texture>Liveries/2048x2048/RAF253S_3.png</texture>
+        <specular>
+          <red>   0.03 </red>
+          <green> 0.03 </green>
+          <blue>  0.03 </blue>
+        </specular>
+        <emission>
+          <red>   0.02 </red>
+          <green> 0.02 </green>
+          <blue>  0.02 </blue>
+        </emission>
+      </livery>
+    </model>
+    
+  </sim>
+
+</PropertyList>

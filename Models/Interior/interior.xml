@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>interior.ac</path>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttourverriere</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+    <object-name>intverriere</object-name>
+  </effect>
+
+ <!-- Panel -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -1.72697 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.16905 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Westland-Whirlwind/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.37024 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.14000 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Verrière -->
+  <animation>
+    <name>IntCanopy</name>
+    <object-name>inttourverriere</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IntCanopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopy</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 0.7 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>IntCanopy</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
