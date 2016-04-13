@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="whirlwind-jsbsim-cnf.xml"> -->
-<PropertyList include="whirlwind-yasim-cnf.xml">
-
+<PropertyList include="Systems/whirlwind-base.xml">
   <sim>
 
     <description>Westland Whirlwind (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
-
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+    
+    <flight-model>yasim</flight-model>
+    <aero>Systems/whirlwind-yasim</aero>
+    
     <rating>
-      <FDM type="int">     2 </FDM>
+      <FDM type="int">     3 </FDM>
       <systems type="int"> 2 </systems>
       <cockpit type="int"> 3 </cockpit>
       <model type="int">   4 </model>

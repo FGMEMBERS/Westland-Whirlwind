@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 50 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 5
 OBJECT poly
@@ -10,7 +10,7 @@ data 9
 interieur
 texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 275
 1.628035 0.492189 0.35701
 1.628035 0.518404 0.352274
@@ -2096,7 +2096,7 @@ data 15
 inttourverriere
 texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 375
 2.627932 0.930572 0.06113
 2.858863 0.86066 0.051924
@@ -4624,7 +4624,7 @@ data 7
 inttout
 texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 176
 2.627932 0.591365 0.3202
 2.783627 0.614934 0.270403
@@ -5475,7 +5475,7 @@ name "intverriere"
 loc -3.337347 -0.277282 -0
 data 11
 intverriere
-crease 30.000001
+crease 180.000005
 numvert 211
 1.691715 1.010571 0.066712
 1.952665 1.041232 -0
@@ -6709,7 +6709,7 @@ name "intvitres"
 loc -3.337347 -0.277282 -0
 data 9
 intvitres
-crease 30.000001
+crease 180.000005
 numvert 49
 1.628035 0.848516 0.23732
 1.628035 0.765959 0.279059

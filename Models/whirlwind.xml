@@ -4,6 +4,11 @@
 
   <path>whirlwind.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/Westland-Whirlwind/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Westland-Whirlwind/Models/Liveries", 10);
@@ -56,6 +61,8 @@
     <object-name>supportretro</object-name>
 
     <object-name>trous</object-name>
+    <object-name>trouvoletG</object-name>
+    <object-name>trouvoletD</object-name>
     <object-name>croisillons</object-name>
     <object-name>guns</object-name>
     <object-name>echappes</object-name>
@@ -114,6 +121,8 @@
     <object-name>supportretro</object-name>
 
     <object-name>trous</object-name>
+    <object-name>trouvoletG</object-name>
+    <object-name>trouvoletD</object-name>
     <object-name>croisillons</object-name>
     <object-name>guns</object-name>
     <object-name>echappes</object-name>
@@ -140,18 +149,10 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
@@ -178,74 +179,26 @@
     <object-name>nez</object-name>
     <object-name>supportretro</object-name>
   </effect>
-
-  <effect>
-    <inherits-from>Effects/model-combined-deferred</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>fuselage</object-name>
-    <object-name>ailes</object-name>
-    <object-name>aileronG</object-name>
-    <object-name>aileronD</object-name>
-    <object-name>voletG</object-name>
-    <object-name>voletD</object-name>
-    <object-name>ailes2</object-name>
-    <object-name>direction</object-name>
-    <object-name>profondeurG</object-name>
-    <object-name>profondeurD</object-name>
-    <object-name>bolG</object-name>
-    <object-name>bolD</object-name>
-    <object-name>tourverriere</object-name>
-    <object-name>moteurs</object-name>
-    <object-name>ajout</object-name>
-    <object-name>antennes</object-name>
-    <object-name>cachesmoteurs</object-name>
-    <object-name>porteGE</object-name>
-    <object-name>porteGI</object-name>
-    <object-name>porteDI</object-name>
-    <object-name>porteDE</object-name>
-    <object-name>porteAG</object-name>
-    <object-name>porteAD</object-name>
-    <object-name>nez</object-name>
-    <object-name>supportretro</object-name>
-  </effect>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>vitres</object-name>
-    <object-name>verriere</object-name>
-    <object-name>propdiscG</object-name>
-    <object-name>propblurG</object-name>
-    <object-name>propdiscD</object-name>
-    <object-name>propblurD</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>vitres</object-name>
-    <object-name>verriere</object-name>
-  </animation>
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
+    <inherits-from>Aircraft/Westland-Whirlwind/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
+    <object-name>vitres</object-name>
+    <object-name>verriere</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitres</object-name>
+    <object-name>vitres</object-name>
+    <object-name>verriere</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscD</object-name>
     <object-name>propblurD</object-name>
   </effect>
-
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/Westland-Whirlwind/Models/shadow.xml</path>
@@ -263,15 +216,8 @@
 
   <!-- Interieur -->
   <model>
-    <name>Interieur</name>
     <path>Aircraft/Westland-Whirlwind/Models/Interior/interior.xml</path>
   </model>
-
-  <!-- For Rembrandt -->
-  <animation>
-    <type>noshadow</type>
-    <object-name>Interieur</object-name>
-  </animation>
 
   <!-- Cranking effects -->
   <!-- Left -->
@@ -396,6 +342,12 @@
     <type>spin</type>
     <object-name>CompleteG</object-name>
     <property>engines/engine[0]/rpm</property>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 50 </value>
+      </greater-than>
+    </condition>
     <factor> 2 </factor>
     <center>
       <x-m> -4.23192 </x-m>
@@ -461,6 +413,12 @@
   <animation>
     <type>spin</type>
     <object-name>CompleteD</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value> 50 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[1]/rpm</property>
     <factor> 2 </factor>
     <center>
@@ -475,6 +433,22 @@
     </axis>
   </animation>
 
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>direction</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -15 </factor>
+    <axis>
+      <x1-m>  4.17525 </x1-m>
+      <y1-m>  0.00000 </y1-m>
+      <z1-m> -0.33440 </z1-m>
+      <x2-m>  4.23522 </x2-m>
+      <y2-m>  0.00000 </y2-m>
+      <z2-m>  1.28838 </z2-m>
+    </axis>
+  </animation>
+  
   <!-- Gouverne de profondeur -->
   <animation>
     <type>rotate</type>
@@ -503,22 +477,6 @@
       <x2-m>  4.19763 </x2-m>
       <y2-m>  2.31754 </y2-m>
       <z2-m>  1.39620 </z2-m>
-    </axis>
-  </animation>
-
-  <!-- Gouverne de direction -->
-  <animation>
-    <type>rotate</type>
-    <object-name>direction</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor> -20 </factor>
-    <axis>
-      <x1-m>  4.17525 </x1-m>
-      <y1-m>  0.00000 </y1-m>
-      <z1-m> -0.33440 </z1-m>
-      <x2-m>  4.23522 </x2-m>
-      <y2-m>  0.00000 </y2-m>
-      <z2-m>  1.28838 </z2-m>
     </axis>
   </animation>
 
@@ -557,6 +515,7 @@
   <animation>
     <type>translate</type>
     <object-name>voletG</object-name>
+    <object-name>trouvoletG</object-name>
     <property>surface-positions/flap-pos-norm</property>
     <factor> 0.6 </factor>
     <axis>
@@ -569,6 +528,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG</object-name>
+    <object-name>trouvoletG</object-name>
     <property>surface-positions/flap-pos-norm</property>
     <factor> 40 </factor>
     <axis>
@@ -584,6 +544,7 @@
   <animation>
     <type>translate</type>
     <object-name>voletD</object-name>
+    <object-name>trouvoletD</object-name>
     <property>surface-positions/flap-pos-norm</property>
     <factor> 0.6 </factor>
     <axis>
@@ -596,6 +557,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD</object-name>
+    <object-name>trouvoletD</object-name>
     <property>surface-positions/flap-pos-norm</property>
     <factor> 40 </factor>
     <axis>
@@ -877,6 +839,75 @@
     </axis>
   </animation>
 
+  <!-- Compression -->
+  <animation>
+    <name>RoueGauche</name>
+    <object-name>axeGB</object-name>
+    <object-name>roueG</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>RoueGauche</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>RoueDroite</name>
+    <object-name>axeDB</object-name>
+    <object-name>roueD</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>RoueDroite</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.1 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>Rouelette</name>
+    <object-name>axeA</object-name>
+    <object-name>roueA</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Rouelette</object-name>
+    <property>gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -15 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  3.31128 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.42038 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
   <!-- Roulette de queue -->
   <animation>
     <name>TrainA</name>
