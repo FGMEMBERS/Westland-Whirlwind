@@ -4,7 +4,6 @@
   1 ft  =  0.3048 m
   1 m = 3.2808399 ft
 -->
-
 <PropertyList>
 
   <path>N-9_Gunsight.ac</path>
@@ -29,22 +28,21 @@
     <object-name>DLens</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre_turn</object-name>
-  </animation>
-
-  <!--  REMBRANDT support for transparent objects -->
+  <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
+    <inherits-from>Aircraft/Westland-Whirlwind/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre_turn</object-name>
     <object-name>PLens</object-name>
     <object-name>DLens</object-name>
   </effect>
-
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre_turn</object-name>
+    <object-name>PLens</object-name>
+    <object-name>DLens</object-name>
+  </effect>
+  
   <animation>
     <type>rotate</type>
     <object-name>ball</object-name>
@@ -68,4 +66,3 @@
   </animation>
 
 </PropertyList>
-

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <sim include="views.xml">
+
+    <fuel-fraction> 0.8 </fuel-fraction>
+
+    <startup>
+     <splash-texture>Aircraft/Westland-Whirlwind/whirlwind-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/Westland-Whirlwind/Sounds/whirlwind-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Westland-Whirlwind/Models/whirlwind.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <lights>
+        <nav-lights>true</nav-lights>
+        <strobe-lights>true</strobe-lights>
+      </lights>
+    </model>
+
+    <submodels>
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Westland-Whirlwind/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int   n="0"  type="int"> 0</int>                                          <!-- 0 immat -->
+        <int   n="1"  type="int"> 0</int>                                          <!-- 1 immat -->
+        <int   n="2"  type="int"> 0</int>                                          <!-- 2 immat -->
+        <int   n="3"  type="int"> 0</int>                                          <!-- 3 immat -->
+        <int   n="4"  type="int"> 0</int>                                          <!-- 4 immat -->
+        <int   n="5"  type="int"> 0</int>                                          <!-- 5 immat -->
+        <int   n="6"  type="bool">1</int>                                          <!-- 6 smoke/bomb/torpedo -->
+        <int   n="7"  type="int"> 0</int>                                          <!-- 7 color -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">0</int>         <!-- 8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">false</int>             <!-- 9 strobe-lights -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m">0</float>                       <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft">0</float>                      <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/rpm"/>
+        <float n="5"  alias="/engines/engine[0]/cranking"/>
+        <float n="6"  alias="/engines/engine[1]/rpm"/>
+        <float n="7"  alias="/engines/engine[1]/cranking"/>
+        <float n="8"  alias="/gear/gear[0]/wow/"/>
+        <float n="9"  alias="/gear/gear[1]/wow/"/>
+        <float n="10" alias="/gear/gear[2]/wow/"/>
+        <float n="11" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="12" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="13" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <flaps include="flaps.xml"/>
+
+    <help include="help.xml"/>
+
+    <menubar include="../Dialogs/whirlwind-menu.xml"/>
+
+  </sim>
+
+  <input include="whirlwind-keyboard.xml"/>
+  
+  <controls include="controls.xml"/>
+
+  <engines include="engines.xml"/>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Westland-Whirlwind/Nasal/doors.nas</file>
+    </doors>
+    <whirlwind>
+      <file>Aircraft/Westland-Whirlwind/Nasal/immat.nas</file>
+      <file>Aircraft/Westland-Whirlwind/Nasal/liveries.nas</file>
+      <file>Aircraft/Westland-Whirlwind/Nasal/light.nas</file>
+      <file>Aircraft/Westland-Whirlwind/Nasal/rpm.nas</file>
+    </whirlwind>
+    <guns>
+      <file>Aircraft/Westland-Whirlwind/Nasal/weapons.nas</file>
+      <file>Aircraft/Westland-Whirlwind/Nasal/revi.nas</file>
+    </guns>
+  </nasal>
+
+</PropertyList>
